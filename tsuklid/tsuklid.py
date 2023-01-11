@@ -105,4 +105,4 @@ else:
                     c = (3*c + 1) / 2
             print(round(c), end=" ") #lisas sulguri
     print()
-    print("on tõestatud") 
+    print("on tõestatud") #
