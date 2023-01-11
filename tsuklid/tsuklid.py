@@ -56,7 +56,7 @@ print()
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 while 1:
     try:
-        a = abs(int(input("Sisesta taisarv => ")))
+        a = abs(int(input("Sisesta taisarv => "))) #eemaldas sulguri
         break
     except ValueError:
          print("See pole taisarv.")
@@ -67,18 +67,18 @@ else:
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     print("Maarake, kui palju on paaris- ja mitu paaritut numbrit")
     print()
-    c=b=a
-    paaris=0
-    paaritu=0
-    while b > 0:
-        if b % 2==0:
-            paaris += 1
+    c=b=a #eemaldas topelt võrdsuse
+    paaris=0 #eemaldas topelt võrdsuse
+    paaritu=0 #eemaldas topelt võrdsuse
+    while b > 0: #muutis käärsoole
+        if b % 2==0: #lisas veel ühe võrdsuse
+            paaris += 1 #parandas =+
         else:
-            paaritu += 1
-        b = b // 10 #2 ==
+            paaritu += 1 #parandas =+
+        b = b // 10 #eemaldas topelt võrdsuse
 
-    print("Paaris arvude kogus:", paaris)
-    print("Paaritu on:", paaritu)
+    print("Paaris arvude kogus:", paaris) #lisas koma
+    print("Paaritu on:", paaritu) #lisas koma
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     print("Poorame sisestatud arvu umber")
@@ -88,21 +88,21 @@ else:
         number = a % 10
         a = a // 10
         b = b * 10
-        b += number
+        b += number #eemaldas lisatühiku
     print("Muudetud arv", b)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print(("Проверяем гипотезу Сиракуз"))
+    print(("Uurime Syracuse hüpoteesi"))
     print()
-    if c % 2 == 0:
-        print(c," - Paaris arv, Jagame 2.")
+    if c % 2 == 0: #lisatud võrdsed 
+        print(c," - Paaris arv, Jagame 2.") #tõstis esile komamuutuja
     else:
-        print(c," - Paaritu arv. Korrutame 3, liidame 1 ja jagame 2.")
+        print(c," - Paaritu arv. Korrutame 3, liidame 1 ja jagame 2.") #tõstis esile komamuutuja
     while c != 1:
             if c % 2 == 0:
-                    c = c / 2
+                    c = c / 2 #kaks korda võrdne
             else:
                     c = (3*c + 1) / 2
-            print(round(c), end=" ")
+            print(round(c), end=" ") #lisas sulguri
     print()
-    print("on tõestatud")
+    print("on tõestatud") 
